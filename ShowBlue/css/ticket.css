@@ -1,0 +1,201 @@
+@import 'https://fonts.googleapis.com/css?family=Farsan|Quattrocento+Sans';
+.ticket {
+    height: 300px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.ticket .canhoto,
+.ticket .conteudo {
+    height: 300px;
+    background: #ddf;
+    float: left;
+    box-shadow: 2px 2px 2px 0 #aaa;
+}
+
+.ticket .canhoto {
+    width: 120px;
+    border-radius: 5px 15px 15px 5px;
+}
+
+.ticket .canhoto::before {
+    content: "";
+    width: 75px;
+    height: 150px;
+    position: relative;
+    top: calc(50% - 75px);
+    display: inline-block;
+    border-radius: 0 100px 100px 0;
+    background: white;
+    box-shadow: 2px -3px 2px 0 #ccc;
+}
+
+.ticket .conteudo::before {
+    content: "";
+    display: block;
+    height: 270px;
+    width: 1px;
+    border-left: 1px dashed #66a;
+    float: left;
+    left: 0px;
+    top: 15px;
+    position: relative;
+}
+
+.ticket .conteudo {
+    width: calc( 100% - 120px);
+    border-radius: 15px 5px 5px 15px;
+    position: relative;
+}
+
+.ticket .conteudo .showblue {
+    float: right;
+    color: #369;
+    position: relative;
+    top: 5px;
+    right: 10px;
+    text-shadow: 1px 1px #ccf;
+    font-family: 'Tillana', cursive;
+}
+
+.ticket .conteudo .qrcode {
+    float: left;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.ticket .conteudo .titulo h1 {
+    font-family: 'Farsan', cursive;
+    color: #747a92;
+    margin: 40px 10px 0 10px;
+    border-bottom: 1px solid #b6bfd0;
+    ;
+}
+
+.ticket .conteudo .titulo h2 {
+    font-family: 'Farsan', cursive;
+    color: #989eb5;
+    margin: 0px 0px 0px 10px;
+    font-size: 1.75em;
+}
+
+.ticket .conteudo .info {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 158px;
+    width: calc(100% - 175px);
+}
+
+.ticket .conteudo .info .nome,
+.ticket .conteudo .info .cpf {
+    font-family: monospace;
+    font-size: 1.5em;
+    color: #335;
+}
+
+.ticket .conteudo .info .cpf {
+    margin-bottom: 10px;
+}
+
+.ticket .conteudo .date {
+    font-size: 2.7em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    line-height: 1em;
+    color: #747aa2;
+}
+
+.ticket .conteudo .logo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.ticket .conteudo .logo img {
+    width: 144px;
+}
+
+    .modal-dialog {
+          width: initial !important;
+
+    }
+.modal {
+    bottom: initial;
+    overflow: initial;
+    position: relative;
+}
+.ticket .canhoto { 
+    height: 450px;
+}
+
+.modal-footer a {
+    margin-top: 10px;
+}
+
+.ticket .conteudo::before { 
+    height: 422px;
+}
+
+.ticket .conteudo { 
+    height: 450px;
+}
+
+.ticket .conteudo .logo {
+    position: absolute;
+    top: -57px;
+    right: 0px; 
+}
+ .ticket .conteudo .logo img {
+    width: 105px;
+    top: -73px;
+    position: relative;
+}
+
+.ticket {
+    height: auto;
+    width: auto; 
+    margin-top: 10px;
+    margin-left: -131px;
+    margin-right: -11px;
+    }
+.ticket .conteudo .qrcode {
+    float: initial;
+    width: initial;
+    height: initial;
+    position: initial;
+    bottom: initial;
+    left: initial;
+    margin: 16px;
+    text-align: center;
+}
+
+.ticket .conteudo .info .nome, .ticket .conteudo .info .cpf {
+    font-family: monospace;
+    font-size: 1.5em;
+    color: #335;
+    text-align: center;
+}
+
+.ticket .titulo {
+    text-align: center;
+}
+
+.ticket .conteudo .info {
+    position: initial;
+    right: initial;
+    bottom: initial;
+    height: initial;
+    width: initial;
+}
+
+.ticket .conteudo .date {
+    font-size: 2.7em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    line-height: 1em;
+    color: #747aa2;
+    text-align: center;
+}

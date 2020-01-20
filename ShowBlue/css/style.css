@@ -1,0 +1,175 @@
+#topo {
+    width: 100%;
+    z-index: 9999;
+}
+
+#centralizar {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 15px;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#t1 {
+    z-index: 9999;
+    position: absolute;
+    text-indent: 40px;
+    margin: 10px;
+    top: 70px;
+}
+
+#logo {
+    top: 20px;
+    z-index: 9999;
+    position: absolute;
+    text-indent: 10px;
+    margin: 20px;
+}
+
+#conteudo-pequeno {
+    width: 400px;
+    min-height: 250px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 1px #ccc;
+    margin-left: calc(50% - 200px);
+    margin-top: 200px;
+    z-index: 999;
+    position: absolute;
+}
+
+#conteudo {
+    position: absolute;
+    z-index: 100;
+    width: calc(100% - 64px);
+    height: calc(100% - 320px);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 1px #ccc;
+    background: #f5f5f5;
+    margin-left: 32px;
+    margin-top: 100px;
+    padding: 16px;
+}
+
+#conteudo-medio {
+    position: absolute;
+    z-index: 100;
+    width: calc(100% - 64px);
+    height: calc(100% - 100px);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 1px #ccc;
+    background: #f5f5f5;
+    margin-left: 32px;
+    margin-top: 100px;
+    padding: 16px;
+}
+
+#conteudo-grande {
+    position: absolute;
+    z-index: 100;
+    width: calc(100% - 64px);
+    height: min-height;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 1px #ccc;
+    background: #f5f5f5;
+    margin-left: 32px;
+    margin-top: 100px;
+    padding: 16px;
+}
+
+#conteudo-tela-principal {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 1px #ccc;
+    margin-left: calc(50% - 250px);
+    margin-top: 150px;
+    z-index: 999;
+    position: absolute;
+}
+
+#conteudo-exclusao {
+    margin-top: 16px;
+}
+
+#conteudo-botao {
+    margin-top: 16px;
+}
+
+.imagem {
+    float: right;
+    font-size: 20px;
+}
+
+.background-img {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: url(http://img3.themebin.com/1920x1080/hd_party_wallpaper.jpg);
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+
+/*aqui começa a putaria*/
+
+@media screen and (max-width: 480px) {
+    body {
+        background: url(http://img3.themebin.com/1920x1080/hd_party_wallpaper.jpg);
+        background-position: center;
+    }
+    .background-img {
+        display: none;
+    }
+    #centralizar {
+        width: 100%;
+        height: auto;
+        position: initial;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 80px;
+        margin-top: 66px;
+        margin-bottom: 30px;
+    }
+    #t1 {
+        z-index: initial;
+        position: initial;
+        text-indent: initial;
+        margin: 0;
+        top: 0;
+    }
+    #conteudo-pequeno {
+        width: calc(100% - 16px);
+        min-height: 250px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 10px 1px #ccc;
+        margin-left: initial;
+        margin-top: initial;
+        z-index: 999;
+        position: absolute;
+        margin: 8px;
+    }
+    #topo.btn.btn-default {
+        position: absolute;
+        right: 40px;
+    }
+    #conteudo-grande.well a.btn.btn-primary {
+        margin: 12px;
+    }
+
+    .canhoto {
+        width: 50px;
+    border-radius: 5px 15px 15px 5px;
+    }
+}
